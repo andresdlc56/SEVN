@@ -4,5 +4,5 @@ var indexController = require('../../controllers/indexController.js');
 
 module.exports = function(app) {
     /*Index*/
-    app.get('/', indexController.index);
+    app.get('/items', indexController.index);
 }

@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <router-link to="/">Random Users</router-link>
+    <router-link to="/items">Items</router-link>
     <router-view/>
   </div>
 </template>

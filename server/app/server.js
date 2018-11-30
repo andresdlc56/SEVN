@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+var cors = require('cors');
 const app = express();
 
 //Configuraciones
@@ -7,6 +8,7 @@ app.set('port', process.env.PORT || 8081);
 
 //Middlewares
 app.use(morgan('dev'));
+app.use(cors());
 app.use(express.json()); //Para entender los formatos json
 
 //models
